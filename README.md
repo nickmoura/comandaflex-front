@@ -1,12 +1,90 @@
-# React + Vite
+# ComandaFlex - Frontend
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Interface web para gestão de pedidos de mesas no sistema **ComandaFlex**.
 
-Currently, two official plugins are available:
+Este projeto foi desenvolvido utilizando **React.js** com **Vite**, **TailwindCSS** para o estilo e **React-Toastify** para as notificações.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## Expanding the ESLint configuration
+## Tecnologias Utilizadas
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- [React.js](https://reactjs.org/)
+- [Vite](https://vitejs.dev/)
+- [TailwindCSS](https://tailwindcss.com/)
+- [React-Toastify](https://fkhadra.github.io/react-toastify/)
+- [JavaScript](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript)
+
+---
+
+## Como rodar o projeto
+
+### Pré-requisitos
+
+- Node.js (versão 18 ou superior)
+- npm ou yarn instalado
+
+### Instalação
+
+Clone o repositório:
+
+```bash
+git clone https://github.com/seu-usuario/comandaflex-frontend.git
+cd comandaflex-frontend
+````
+Instale as dependências:
+
+```bash
+npm install
+```
+
+Inicie o servidor de desenvolvimento:
+```bash
+npm run dev
+```
+
+Acesse no navegador:
+```bash
+https://localhost:5173
+```
+
+## Estrutura de pastas
+
+```bash
+📁 src/
+ 📁 components/
+   ⚛️ PedidoForm.jsx
+    ⚛️ PedidoList.jsx
+ 📁 pages/
+   ⚛️ Mesa.tsx
+ 📁 services/
+   ⚛️ pedidoService.jsx
+ ⚛️ App.jsx
+ ⚛️ main.jsx
+ ```
+
+- components/: Componentes reutilizáveis da interface.
+- pages/: Páginas principais da aplicação.
+- services/: Serviços de comunicação e manipulação de dados.
+
+## Funcionalidades
+
+- Criar novos pedidos.
+- Listar pedidos em aberto.
+- Armazenamento de pedidos em LocalStorage (em fase inicial).
+- Feedback ao usuário através de notificações visuais.
+- Layout responsivo e adaptado a dispositivos móveis.
+
+## Próximos Passos
+- Integração com API backend.
+- Funcionalidades de registro para delivery e para levar.
+- Autenticação de usuários (garçons e administradores).
+- Sistema de gestão de mesas dinâmicas.
+- Dashboard para acompanhamento dos pedidos em tempo real.
+
+## Licença
+
+Este projeto está licenciado sob a licença MIT.
+
+## Autor
+
+Desenvolvido por [Nick](https://www.nickmoura.dev)
